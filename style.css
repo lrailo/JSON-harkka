@@ -21,8 +21,8 @@ font-weight: bold !important;
 
 /* kaikkien kuvien maksimileveyden asettaminen */
 img {
-    max-width: 80%; /* kuvan maksimileveys näytöstä */
-    height: auto; /* korkeuden säätö automaattisesti, ettei kuva veny */
+    max-width: 80% !important; /* kuvan maksimileveys näytöstä */
+    height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
     /*varmistaa, että kuva on keskellä */
     display: block; 
     margin-left: auto;
