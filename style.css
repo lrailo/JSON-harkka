@@ -1,6 +1,6 @@
 /* fontti koko sivustolle */
 body {
-    font-family: "Garamond", sans-serif;
+    font-family: "Garamond", sans-serif !important;
 }
 
 /* navigaatiopalkin taustan väri */
@@ -10,8 +10,8 @@ body {
 
 /* navigaatiopalkin tekstin väri */
 .navbar a {
-color: rgb(38, 158, 54);
-font-weight: bold;
+color: rgb(38, 158, 54) !important;
+font-weight: bold !important;
 }
 
 /* aktiivisen navigaatiopalkin linkin väri */
