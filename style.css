@@ -1,0 +1,10 @@
+
+/* fontti koko sivustolle */
+body {
+    font-family: "Courier New", monospace;
+}
+
+/* aktiivisen linkin väri */
+.active {
+    color: #f3792d !important;
+}
