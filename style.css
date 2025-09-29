@@ -3,6 +3,11 @@ body {
     font-family: "Garamond", sans-serif !important;
 }
 
+main {
+    width:85%; /* Rajoittaa pääsisällön leveyden */
+    margin: 20px auto; /* Ylä/alamarginaali 0, vasen/oikea auto = Keskitys */
+}
+
 /* navigaatiopalkin taustan väri */
 .navbar {
     background-color: rgb(238, 244, 231) !important;
@@ -21,7 +26,7 @@ font-weight: bold !important;
 
 /* kaikkien kuvien maksimileveyden asettaminen */
 img {
-    max-width: 80% !important; /* kuvan maksimileveys näytöstä */
+    max-width: 600px !important; /* kuvan maksimileveys näytöstä, 80% ei suurentanut kuvaa, joten kokeiltu pikseleitä */
     height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
     /*varmistaa, että kuva on keskellä */
     display: block; 
