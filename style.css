@@ -1,10 +1,20 @@
-
 /* fontti koko sivustolle */
 body {
-    font-family: "Courier New", monospace;
+    font-family: "Garamond", sans-serif;
 }
 
-/* aktiivisen linkin väri */
-.active {
-    color: #f3792d !important;
+/* navigaatiopalkin taustan väri */
+.navbar {
+    background-color: rgb(238, 244, 231) !important;
+}
+
+/* navigaatiopalkin tekstin väri */
+.navbar a {
+color: rgb(38, 158, 54);
+font-weight: bold;
+}
+
+/* aktiivisen navigaatiopalkin linkin väri */
+.navbar a.active {
+    color: #035810 !important;
 }
