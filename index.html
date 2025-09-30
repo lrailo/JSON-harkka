@@ -17,7 +17,7 @@
     </div>
     <!-- harmaa navigaatio -->
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <div class="container-fluid">
+        <div class="container">
             <!-- hampurilaisvalikko -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@
                     + obj.kuvaus + "<br><hr>"
                 
                     //Kuvan määritteleminen
-                    + "<p><img src=" + obj.kuva + "></p>"
+                    + '<p><img src="' + obj.kuva + '"></p>'
 
                 //Tekstiä sivun keskelle center-tagilla
                     + "<center><h3>" + "Opintojakso" + "</h3>" + "Nimi: " + obj.opintojakso.nimi + "<br>"
@@ -82,7 +82,7 @@
             //For-silmukka: luo jokaisesta tekniikasta linkin sivulle
                 for (var i = 0; i < obj.tekniikat.length; i++) {
                     tiedot += "<b>Aihe: " + obj.tekniikat[i].aihe + "</b>";
-                    tiedot += " <a href=" + obj.tekniikat[i].linkki + ">" + obj.tekniikat[i].linkki + "</a>" + "<br>";
+                    tiedot += ' <a href="' + obj.tekniikat[i].linkki + '">' + obj.tekniikat[i].linkki + "</a>" + "<br>";
                 }
                 tiedot += "</p>";
 
