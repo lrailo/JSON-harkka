@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    </div>
     <!-- harmaa navigaatio -->
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container">
@@ -43,10 +42,10 @@
                 </ul>
             </div>
     </nav>
-<main>
-    <div id="json-tulostus"></div>
-<script>
-    fetch('tietue.JSON') //Haetaan JSON-tiedosto juurikansiosta (../)
+    <main>
+        <div id="json-tulostus"></div>
+        <script>
+            fetch('tietue.JSON') //Haetaan JSON-tiedosto juurikansiosta (../)
 
                 // Muunnetaan vastaus javascript olioksi
                 .then(function (response) {
@@ -67,19 +66,19 @@
             function kerro(obj) {
                 let tiedot = "<h1>" + obj.otsikko + "</h1><br>"
                     + obj.kuvaus + "<br><hr>"
-                
+
                     //Kuvan määritteleminen
                     + '<p><img src="' + obj.kuva + '"></p>'
 
-                //Tekstiä sivun keskelle center-tagilla
+                    //Tekstiä sivun keskelle center-tagilla
                     + "<center><h3>" + "Opintojakso" + "</h3>" + "Nimi: " + obj.opintojakso.nimi + "<br>"
                     + "Tunnus: " + obj.opintojakso.tunnus + "<br>"
                     + "Opintopisteet: " + obj.opintojakso.opintopisteet + "<br></center>";
 
-            //Väliotsikon lisääminen
+                //Väliotsikon lisääminen
                 tiedot += "<p><h3> Aiheet </h3>";
 
-            //For-silmukka: luo jokaisesta tekniikasta linkin sivulle
+                //For-silmukka: luo jokaisesta tekniikasta linkin sivulle
                 for (var i = 0; i < obj.tekniikat.length; i++) {
                     tiedot += "<b>Aihe: " + obj.tekniikat[i].aihe + "</b>";
                     tiedot += ' <a href="' + obj.tekniikat[i].linkki + '">' + obj.tekniikat[i].linkki + "</a>" + "<br>";
@@ -91,8 +90,8 @@
 
             }
 
-</script>
-</main>
+        </script>
+    </main>
 </body>
 
 </html>
