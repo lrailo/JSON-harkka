@@ -25,10 +25,17 @@ font-weight: bold !important;
 }
 
 /* etusivun kuvan asetukset, kohdistetaan vain json-datan tuomaan kuvaan */
-#json-tulostus img {
+#index img {
     width: 80% !important; /* kuvan leveyden säätöä, poistettu max-width, koska kuvan koko ei muuttunut  */
     height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
     /*varmistaa, että kuva on keskellä */
     display: block; 
     margin: auto;
+}
+
+#toteutus img {
+    width: 80% !important; /* kuvan leveyden säätöä, poistettu max-width, koska kuvan koko ei muuttunut  */
+    height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
+    display: block; 
+    margin: 0; /* kuva jää vasempaan laitaan, kun marginaalit 0 */
 }

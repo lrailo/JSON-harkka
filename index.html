@@ -43,7 +43,7 @@
             </div>
     </nav>
     <main>
-        <div id="json-tulostus"></div>
+        <div id="index"></div>
         <script>
             fetch('tietue.JSON') //Haetaan JSON-tiedosto juurikansiosta (../)
 
@@ -59,7 +59,7 @@
 
                 // Käsitellään mahdolliset virheet (esim. tiedostoa ei löydy) 
                 .catch(function (error) {
-                    document.getElementById("json-tulostus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
+                    document.getElementById("index").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
                 })
 
             //Funktio, joka luo HTML-sisällön ja tulostaa sen sivulle
@@ -86,7 +86,7 @@
                 tiedot += "</p>";
 
                 //Päivitetään HTML-sivu luodulla sisällöllä
-                document.getElementById("json-tulostus").innerHTML = tiedot;
+                document.getElementById("index").innerHTML = tiedot;
 
             }
 

@@ -44,7 +44,7 @@
     </nav>
     <main>
 
-        <div id="json-tulostus"></div>
+        <div id="toteutus"></div>
         <script>
             fetch('tietue2.json') //Haetaan JSON-tiedosto juurikansiosta (../)
 
@@ -60,7 +60,7 @@
 
                 // Käsitellään mahdolliset virheet (esim. tiedostoa ei löydy) 
                 .catch(function (error) {
-                    document.getElementById("json-tulostus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
+                    document.getElementById("toteutus").innerHTML = "<p>Tietoa ei pystytä hakemaan</p>";
                 })
 
             //Funktio, joka luo HTML-sisällön ja tulostaa sen sivulle
@@ -73,14 +73,14 @@
                 for (var i = 0; i < obj.osallistujien_nimet.length; i++) {
                     tiedot += obj.osallistujien_nimet[i] + "<br>";
                 }
-                tiedot += "<h3>Ajanjakso: " + obj.alkamisaika + " - " + obj.loppumisaika + "</h3>"
+                tiedot += "<br><h3>Ajanjakso: " + obj.alkamisaika + " - " + obj.loppumisaika + "</h3>"
                     + "<h3>Kurssin kesto: " + obj.kesto_vk + " viikkoa</h3>"
 
                     //Kuvan määritteleminen
                     + '<img src="' + obj.kuva + '">'
 
                 //Päivitetään HTML-sivu luodulla sisällöllä
-                document.getElementById("json-tulostus").innerHTML = tiedot;
+                document.getElementById("toteutus").innerHTML = tiedot;
 
             }
 
