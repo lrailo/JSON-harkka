@@ -4,8 +4,10 @@ body {
 }
 
 main {
-    width:85%; /* Rajoittaa pääsisällön leveyden */
-    margin: 20px auto; /* Ylä/alamarginaali 0, vasen/oikea auto = Keskitys */
+    width: 85%;
+    /* Rajoittaa pääsisällön leveyden */
+    margin: 20px auto;
+    /* Ylä/alamarginaali 0, vasen/oikea auto = Keskitys */
 }
 
 /* navigaatiopalkin taustan väri */
@@ -15,8 +17,8 @@ main {
 
 /* navigaatiopalkin tekstin väri */
 .navbar a {
-color: rgb(38, 158, 54) !important;
-font-weight: bold !important;
+    color: rgb(38, 158, 54) !important;
+    font-weight: bold !important;
 }
 
 /* aktiivisen navigaatiopalkin linkin väri */
@@ -26,16 +28,22 @@ font-weight: bold !important;
 
 /* etusivun kuvan asetukset, kohdistetaan vain json-datan tuomaan kuvaan */
 #index img {
-    width: 80% !important; /* kuvan leveyden säätöä, poistettu max-width, koska kuvan koko ei muuttunut  */
-    height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
+    width: 80% !important;
+    /* kuvan leveyden säätöä, poistettu max-width, koska kuvan koko ei muuttunut  */
+    height: auto !important;
+    /* korkeuden säätö automaattisesti, ettei kuva veny */
     /*varmistaa, että kuva on keskellä */
-    display: block; 
+    display: block;
     margin: auto;
 }
 
 #toteutus img {
-    max-width: 100%; /* responsiivinen kuva  */
-    height: auto; /* korkeuden säätö automaattisesti, ettei kuva veny */
-    display: block; /* kuva lohkoelementiksi */
-    margin: 0; /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
+    max-width: 100%;
+    /* responsiivinen kuva  */
+    height: auto;
+    /* korkeuden säätö automaattisesti, ettei kuva veny */
+    display: block;
+    /* kuva lohkoelementiksi */
+    margin: 0;
+    /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
 }
