@@ -34,8 +34,8 @@ font-weight: bold !important;
 }
 
 #toteutus img {
-    width: 80% !important; /* kuvan leveyden säätöä, poistettu max-width, koska kuvan koko ei muuttunut  */
-    height: auto !important; /* korkeuden säätö automaattisesti, ettei kuva veny */
-    display: block; 
-    margin: 0; /* kuva jää vasempaan laitaan, kun marginaalit 0 */
+    max-width: 100%; /* responsiivinen kuva  */
+    height: auto; /* korkeuden säätö automaattisesti, ettei kuva veny */
+    display: block; /* kuva lohkoelementiksi */
+    margin: 0; /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
 }
