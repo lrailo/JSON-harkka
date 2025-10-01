@@ -38,12 +38,13 @@ main {
 }
 
 #toteutus img {
-    max-width: 100%;
-    /* responsiivinen kuva  */
-    height: auto;
+    /* responsiivinen kuva, maksimissaan 80% elementin leveydestä  */
+    max-width: 80%;
     /* korkeuden säätö automaattisesti, ettei kuva veny */
-    display: block;
+    height: auto;
     /* kuva lohkoelementiksi */
-    margin: 0;
+    display: block;
     /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
+    margin: 0;
+    
 }
