@@ -42,17 +42,37 @@
                 </ul>
             </div>
     </nav>
-    <main>
+    <main id="poke1">
         <h1>Pokemon haku</h1>
+        
+
+        <p id="ohje">Kirjoita laatikkoon Pokemonin nimi ja paina 'Hae', niin näet kirjoittamasi Pokemonin kuvan.<br>
+            Alla lista muutamista Pokemoneista muistinvirkistykseksi.</p> 
+
+
         <p>
-            <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+            <input type="text" id="pokemonName" placeholder="Anna Pokemonin nimi">
             <button onclick="poke()">Hae</button><br>
-
-        <div id="nimi">Kirjoita laatikkoon Pokemonin nimi</div>
-        <p id="kuva2"></p>
         </p>
+        <div id="nimi"></div>
+       
+        <p id="kuva2"></p>
 
-        <script>
+        <p> Tässä muutama Pokemon-nimi muistin virkistykseksi: </p>
+        <ul>
+            <li>Bulbasaur</li>
+    <li>Charmander</li>
+    <li>Squirtle</li>
+    <li>Pikachu</li>
+    <li>Eevee</li>
+    <li>Snorlax</li>
+    <li>Gengar</li>
+    <li>Dragonite</li>
+    <li>Jigglypuff</li>
+    <li>Lucario</li>
+        </ul>        
+       
+       <script>
         function poke() {
 
         // Tallennetaan käyttäjän antama Pokemonin nimi muuttujaan pokeName, muutetaan se samalla pieniksi kirjaimiksi

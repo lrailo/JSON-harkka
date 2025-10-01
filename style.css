@@ -48,3 +48,15 @@ main {
     margin: 0;
     
 }
+
+/* poke1-sivulle taustaväri ja marginaalit pois*/
+#poke1 {
+    margin: 0;
+    background-color: rgb(245, 243, 243);
+}
+
+/* pokemon-kuvan koon suurentaminen */
+#kuva2 img {
+width: 200px;
+height: auto;
+}
