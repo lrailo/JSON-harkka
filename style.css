@@ -49,9 +49,8 @@ main {
     
 }
 
-/* poke1-sivulle taustaväri ja marginaalit pois*/
+/* poke1-sivulle taustaväri*/
 #poke1 {
-    margin: 0;
     background-color: rgb(245, 243, 243);
 }
 
