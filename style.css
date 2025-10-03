@@ -46,7 +46,7 @@ main {
     display: block;
     /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
     margin: 0;
-    
+
 }
 
 /* poke1-sivulle taustaväri*/
@@ -56,6 +56,6 @@ main {
 
 /* pokemon-kuvan koon suurentaminen */
 #kuva2 img {
-width: 200px;
-height: auto;
+    width: 200px;
+    height: auto;
 }
