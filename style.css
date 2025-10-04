@@ -55,3 +55,10 @@ main {
     width: 200px;
     height: auto;
 }
+
+/* sääkuvan koon pienentäminen */
+#saakuva img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
