@@ -1,6 +1,7 @@
 /* fontti koko sivustolle */
 body {
     font-family: "Garamond", sans-serif !important;
+    background-color: rgb(245, 243, 243);
 }
 
 main {
@@ -47,11 +48,6 @@ main {
     /* kuva jää vasempaan laitaan, ilman ylimääräisiä marginaaleja */
     margin: 0;
 
-}
-
-/* poke1-sivulle taustaväri*/
-#poke1 {
-    background-color: rgb(245, 243, 243);
 }
 
 /* pokemon-kuvan koon suurentaminen */
