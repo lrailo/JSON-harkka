@@ -55,6 +55,18 @@
 
             let saaHki = "https://api.openweathermap.org/data/2.5/weather?id=658225&appid=665ecd56dfc08dbb50feb8b8f5034e28&lang=fi&units=metric"
 
+            // Luodaan objekti nykyisestä hetkestä
+            const nyt = new Date();
+
+            // Haetaan nykyiset tunnit
+            const tunnit = nyt.getHours();
+
+            // Haetaan nykyiset minuutit
+            const minuutit = nyt.getMinutes();
+
+            // Tulostetaan kellonaika
+            document.getElementById("kello").innerHTML = "Sää kello " + tunnit + ":" + minuutit;
+
             //Haetaan JSON-tiedosto juurikansiosta
             fetch(saaHki)
 
@@ -83,8 +95,6 @@
                         "Tuulen nopeus: <br>" + tuuli + " m/s";
 
                 });
-
-
 
         </script>
     </main>
