@@ -18,13 +18,13 @@ main {
 
 /* navigaatiopalkin tekstin väri */
 .navbar a {
-    color: rgb(38, 158, 54) !important;
+    color: rgb(5, 106, 18) !important;
     font-weight: bold !important;
 }
 
 /* aktiivisen navigaatiopalkin linkin väri */
 .navbar a.active {
-    color: #035810 !important;
+    color: #2954a8 !important;
 }
 
 /* etusivun kuvan asetukset, kohdistetaan vain json-datan tuomaan kuvaan */

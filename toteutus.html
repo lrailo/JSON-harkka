@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container">
             <!-- hampurilaisvalikko -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Näytä navigaatiovalikko>
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- navigaation linkit -->
@@ -67,7 +67,7 @@
             function kerro(obj) {
                 //omille riveilleen toteutuksen nimi ja osallistujien määrä
                 let tiedot = "<h1>" + obj.toteutuksen_nimi + "</h1>"
-                    + "<h3>" + "Osallistujia: " + obj.osallistujien_lkm + " kpl</h3>"
+                    + "<h2>" + "Osallistujia: " + obj.osallistujien_lkm + " kpl</h2>"
 
                 //For-silmukka: tuodaan osallistujien nimet sivulle, omille riveilleen
                 for (var i = 0; i < obj.osallistujien_nimet.length; i++) {
