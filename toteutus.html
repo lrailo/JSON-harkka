@@ -73,11 +73,13 @@
                 for (var i = 0; i < obj.osallistujien_nimet.length; i++) {
                     tiedot += obj.osallistujien_nimet[i] + "<br>";
                 }
+
+                // Kurssin aika ja kesto
                 tiedot += "<br><h3>Ajanjakso: " + obj.alkamisaika + " - " + obj.loppumisaika + "</h3>"
                     + "<h3>Kurssin kesto: " + obj.kesto_vk + " viikkoa</h3>"
 
                     //Kuvan määritteleminen
-                    + '<img src="' + obj.kuva + '">'
+                    + '<img src="' + obj.kuva + '" alt="Esimerkkikuva ohjelmointiprojektin tiedostoista, kuten app.js, index.html ja package.json">'
 
                 //Päivitetään HTML-sivu luodulla sisällöllä
                 document.getElementById("toteutus").innerHTML = tiedot;
