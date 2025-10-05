@@ -61,7 +61,7 @@ main a {
     height: auto;
 }
 
-/* sääkuvan koon pienentäminen */
+/* sääkuvan koon säätäminen */
 #saakuva img {
     width: 130px;
     height: auto;
