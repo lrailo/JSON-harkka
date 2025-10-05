@@ -58,7 +58,7 @@ main {
 
 /* sääkuvan koon pienentäminen */
 #saakuva img {
-    width: 200px;
+    width: 130px;
     height: auto;
     max-width: 100%;
 }
