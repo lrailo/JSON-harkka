@@ -11,6 +11,11 @@ main {
     /* Ylä/alamarginaali 0, vasen/oikea auto = Keskitys */
 }
 
+/* Linkkien värin korjaus pääsisällössä (riippumatta siitä, missä elementissä ne ovat) */
+main a {
+    color: rgb(0, 68, 153); 
+}
+
 /* navigaatiopalkin taustan väri */
 .navbar {
     background-color: rgb(239, 249, 229) !important;
